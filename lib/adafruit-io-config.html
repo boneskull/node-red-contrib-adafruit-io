@@ -1,0 +1,31 @@
+<script type="text/javascript">
+  RED.nodes.registerType('adafruit-io-config', {
+    category: 'config',
+    defaults: {
+      host: 'io.adafruit.com',
+      port: 80
+    },
+    label() {
+      return `${this.host}:${this.port}`;
+    }
+  });
+</script>
+
+<script type="text/x-red" data-template-name="node-type">
+    <div class="form-row">
+        <label for="node-input-server"><i class="fa fa-server"></i> Server</label>
+        <input type="text" id="node-input-server" placeholder="io.adafruit.com"/>
+    </div>
+    <div class="form-row">
+        <label for="node-input-port"><i class="fa fa-plug"></i> Port</label>
+        <input type="text" pattern="\d*" id="node-input-port" placeholder="80"/>
+    </div>
+    <div class="form-row">
+        <label for="node-input-username"><i class="fa fa-user"></i> Username</label>
+        <input type="text" id="node-input-username" placeholder="Your Adafruit Username"/>
+    </div>
+    <div class="form-row">
+        <label for="node-input-key"><i class="fa fa-key"></i> AIO Key</label>
+        <input type="text" id="node-input-key" placeholder="Your AIO Key"/>
+    </div>
+</script>

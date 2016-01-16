@@ -1,0 +1,33 @@
+{
+  "name": "node-red-contrib-adafruit-io",
+  "version": "0.0.0",
+  "description": "Node-Red Node for Adafruit IO",
+  "license": "MIT",
+  "repository": "https://github.com/boneskull/node-red-contrib-adafruit-io.git",
+  "author": {
+    "name": "Christopher Hiller",
+    "email": "boneskull@boneskull.com",
+    "url": "https://boneskull.com"
+  },
+  "main": "dist/index.js",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "keywords": [
+    "node-red"
+  ],
+  "dependencies": {
+    "adafruit-io": "^4.2.5"
+  },
+  "devDependencies": {
+    "eslint": "^1.10.3",
+    "eslint-config-semistandard": "^5.0.0",
+    "eslint-config-standard": "^4.4.0",
+    "eslint-plugin-standard": "^1.3.1"
+  },
+  "node-red": {
+    "nodes": {
+      "adafruit-io-config": "lib/adafruit-io-config.js"
+    }
+  }
+}
